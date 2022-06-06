@@ -1,11 +1,17 @@
 {
   "name": "nuxt-rollbar-module",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Rollbar module for NuxtJS ",
   "license": "MIT",
   "contributors": [
     {
       "name": "Gaël Reyrol <me@gaelreyrol.com>"
+    },
+    {
+      "name": "Adrian Wieprzkowicz <a.wieprzkowicz@p-programisci.pl>"
+    },
+    {
+      "name": "Vladyslav Prosolupov <vladyslav@p-programisci.pl>"
     }
   ],
   "main": "lib/rollbar.js",
@@ -16,8 +22,7 @@
   "scripts": {
     "dev": "nuxt test/fixture",
     "lint": "eslint lib test",
-    "test": "npm run lint && jest",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "test": "npm run lint && jest"
   },
   "eslintIgnore": [
     "lib/templates/*.*"
@@ -37,19 +42,22 @@
     "rollbar": "^2.14.4"
   },
   "devDependencies": {
+    "@sparing-software/prettier-config": "^1.0.0",
     "codecov": "latest",
     "dotenv": "latest",
-    "eslint": "latest",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-jest": "latest",
     "eslint-plugin-node": "latest",
     "eslint-plugin-promise": "latest",
     "eslint-plugin-standard": "latest",
-    "eslint-plugin-vue": "latest",
+    "eslint-plugin-vue": "^9.1.0",
     "jest": "latest",
     "jsdom": "latest",
-    "nuxt": "latest",
+    "nuxt": "^2.13.3",
+    "request-promise-native": "^1.0.9",
     "standard-version": "latest"
   }
 }
